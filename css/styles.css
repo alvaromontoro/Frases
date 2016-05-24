@@ -1,0 +1,141 @@
+* {
+	background-color:#f0f0f0;
+	text-align:left;
+}
+
+html, body {
+	text-align:center;
+}
+
+#dropping_area  {
+	text-align:center;
+	position:absolute;
+	top:200px;
+	left:50%;
+	width:80%;
+	margin-left:-40%;
+	/*margin-left:-350px;
+	width:685px;*/
+	padding-top:10px;
+	padding-bottom:4px;
+	padding-left:15px;
+	height:66px;
+	border:1px solid #d3d3d3;
+	border-radius:30px;
+	background:#e8e8e8;
+	box-shadow:inset 0px 0px 16px 0px #ccc,
+				0px 0px 16px #fafafa;
+}
+
+.palabra {
+	margin:0px;
+	margin-right:6px;
+	margin-bottom:6px;
+	padding:0px;
+	display:inline-block;
+	border:0px;
+	border-bottom:8px solid #1a4572;
+	border-radius:8px;
+	background-color:#1a4572;
+	cursor:move;
+	/*box-shadow:0px 1px 2px #aaa;*/
+}
+
+.palabra span {
+	margin:0px;
+	margin-left:1px;
+	margin-right:1px;
+	padding:0px;
+	padding-left:16px;
+	padding-right:16px;
+	border:0px;
+	display:inline-block;
+	border-radius:8px;
+	height:50px;
+	border-bottom:1px solid #487db4;
+	border-top:1px solid #165596;
+	text-align:center;
+	line-height:50px;
+	text-shadow:1px 1px 1px #1a4572;
+	color:#d5f0ff;
+	font-size:28px;
+	font-family:calibri,arial,verdana,sans-serif;
+	cursor:move;
+	background: #2665a6; /* Old browsers */
+	background: -moz-linear-gradient(top, #3675b6 2%, #2665a6 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#3675b6), color-stop(100%,#2665a6)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #3675b6 2%,#2665a6 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #3675b6 2%,#2665a6 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #3675b6 2%,#2665a6 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #3675b6 2%,#2665a6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3675b6', endColorstr='#2665a6',GradientType=0 ); /* IE6-9 */
+	
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.palabra.modificable {
+	border-bottom:8px solid #19701B;
+	background-color:#19701B;
+}
+
+.palabra.modificable span {
+	cursor:auto;
+
+	border-bottom:1px solid #47B349;
+	border-top:1px solid #179717;
+	text-shadow:1px 1px 1px #19701B;
+	color:#DCFFD6;
+	background: #26A626; /* Old browsers */
+	background: -moz-linear-gradient(top, #36B536 2%, #26A626 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#36B536), color-stop(100%,#26A626)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #36B536 2%,#26A626 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #36B536 2%,#26A626 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #36B536 2%,#26A626 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #36B536 2%,#26A626 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36B536', endColorstr='#26A626',GradientType=0 ); /* IE6-9 */
+	outline:none;
+}
+
+#button_game {
+	position:absolute;
+	bottom:200px;
+	left:50%;
+	margin-left:-121px;
+	cursor:pointer;
+	box-shadow:0px 2px 4px #aaa;
+	border-bottom:8px solid #444;
+	background-color:#444;
+}
+
+#button_game span {
+	color:#f0f0f0;
+	text-shadow:1px 1px 1px #333;
+	width:240px;
+	height:80px;
+	line-height:80px;
+	margin:auto;
+	margin-left:1px;
+	margin-right:1px;
+	cursor:pointer;
+	border-bottom:1px solid #888888;
+	border-top:1px solid #555555;
+	background: #555555; /* Old browsers */
+	background: -moz-linear-gradient(top, #888888 2%, #555555 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(2%,#888888), color-stop(100%,#555555)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #888888 2%,#555555 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #888888 2%,#555555 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #888888 2%,#555555 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #888888 2%,#555555 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#888888', endColorstr='#555555',GradientType=0 ); /* IE6-9 */
+}
+
+#button_game:hover {
+	border-bottom: 4px solid #444;
+	margin-top:4px;
+	box-shadow:0px 1px 2px #666;
+}
