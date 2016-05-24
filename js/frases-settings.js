@@ -10,9 +10,6 @@
 /*                                                                                            */
 /**********************************************************************************************/
 var settings = {
-
-	// name of the file in which the sentences are saved
-	sourceFileName: "frases14.txt",
 	
 	// message that will be presented when the sentence is correct
 	successMessage: "¡Bien! La frase es correcta. Puedes avanzar a la siguiente frase.",

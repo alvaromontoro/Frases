@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Succes Message",
+		"code": "successMessage",
+		"text": "¡Bien! La frase es correcta. Puedes avanzar a la siguiente frase."
+	},
+	{
+		"title": "Fail Message",
+		"code": "unsuccessMessage",
+		"text": "¡Oops! La frase no es correcta. Inténtalo de nuevo."
+	},
+	{
+		"title": "Game Over",
+		"code": "gameOveMessage",
+		"text": "¡Enhorabuena! Completaste todas las frases correctamente."
+	},
+	{
+		"title": "Check Button",
+		"code": "buttonValue",
+		"text": "Comprobar"
+	},
+	{
+		"title": "Page Title",
+		"code": "pageTitle",
+		"text": "Completa la Frase"
+	},
+	{
+		"title": "No Local Storage",
+		"code": "noLocalStorage",
+		"text": "Your browser does not support local storage. Progress will not be saved."
+	}
+]

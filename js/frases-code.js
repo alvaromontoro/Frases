@@ -1,27 +1,20 @@
 var currentLevel = 0;
 
 function disArray(arr) {
-
 	var x;
-	
 	for (x = 0; x < arr.length; x++) {
-	
 		var y = Math.floor(Math.random() * arr.length);
 		var z = Math.floor(Math.random() * arr.length);
 		var w = arr[y];
-		
 		arr[y] = arr[z];
 		arr[z] = w;
-	
 	}
-
 }
 
 function pintaFrase(frase) {
-
 	var x = 0;
 	var palabras = frase.split(" ");
-	
+
 	// disarray the words
 	disArray(palabras);
 	
@@ -44,11 +37,9 @@ function pintaFrase(frase) {
 			$(this).text($(this).parent().data("original"));
 		}
 	});
-
 }
 
 $(document).ready(function() {
-
 	// change page title
 	document.title = settings.pageTitle;
 
@@ -73,13 +64,11 @@ $(document).ready(function() {
 		
 		// add all the words in the same order they are in the dropping area
 		$("#dropping_area").find(".palabra").each(function() {
-			
 			if ($(this).hasClass("modificable")) {
 				aux = aux + $(this).text() + "|" + $(this).data("original") + " ";
 			} else {
 				aux = aux + $(this).text() + " ";
 			}
-			
 		});
 		
 		// we clean the blank space at the end of the sentence
@@ -94,13 +83,11 @@ $(document).ready(function() {
 			currentLevel++;
 			
 			if (currentLevel < sentences.length) {
-			
 				pintaFrase(sentences[currentLevel]);
-			
 			} else {
-				
 				alert(settings.gameOveMessage);
-				
+				currentLevel = 0;
+				pintaFrase(sentences[currentLevel]);
 			}
 			
 			localStorage["nivel"] = currentLevel;
@@ -109,11 +96,8 @@ $(document).ready(function() {
 		
 			// if the sentence is incorrect, we display an "unsuccess" message
 			alert(settings.unsuccessMessage);
-		
 		}
-		
 	});
-	
 	
 	// if you have completed all the sentences, you go back to the beginning
 	if (currentLevel >= sentences.length) {

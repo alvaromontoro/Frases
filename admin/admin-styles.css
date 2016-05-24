@@ -1,0 +1,36 @@
+html, body {
+	font-family:Roboto, Helvetica, Arial, sans-serif;
+}
+
+.not-active {
+	color:rgba(0,0,0,0.33);
+}
+
+.navbar {
+	border-radius:0;
+}
+
+h1 {
+	margin-top:auto;
+	margin-bottom:auto;
+}
+
+.navbar-inverse .navbar-brand {
+	color:#ffffff;
+}
+
+input[type="text"] {
+	width:100%;
+}
+
+.input-group {
+	margin-bottom:5px; 
+}
+
+.input-group:last-child {
+	display:none;
+}
+
+.margin-right-5 {
+	margin-right:5px;
+}

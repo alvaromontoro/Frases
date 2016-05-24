@@ -1,0 +1,10 @@
+{
+	"filename": "set121313131",
+	"title": "Titulo",
+	"active": true,
+	"order":1,
+	"sentences": [
+		"Esto es una frase",
+		"Esto es otra frase"
+	]
+}
